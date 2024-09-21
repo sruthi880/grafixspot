@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!-- favicon  -->
+    <link rel="icon" href="./assets/img/favicon1.ico" type="image/x-icon">
+
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Splide css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+
+    <!-- font awesome  -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
+    <!-- style  -->
+     <link rel="stylesheet" href="./assets/css/animate.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+<body>
+
+
+    <!-- Nav -->
+    <nav id="navbar">
+        <div class="container">
+            <div class="nav">
+                <div id="logo" class="img-cd"><a href="#"><img src="./assets/img/logo.png" alt=""></a></div>
+                <div id="menu">
+                    <a href="#" onclick="closeNav()">Home</a>
+                    <a href="#about" onclick="closeNav()">About</a>
+                    <a href="#services" onclick="closeNav()">Services</a>
+                    <a href="#portfolio" onclick="closeNav()">Portfolio</a>
+                    <a href="#contact" onclick="closeNav()">Contact</a>
+                    <a href="#" onclick="closeNav()" class="download-resume-btn" target="_blank">Download CV</a>
+                </div>
+                <div id="menuToggle" class="navbar-toggler" onclick="toggleMenu()">☰</div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- hero  -->
+     <section class="hero-section">
+        <div class="container">
+            <div class="hero-content" data-aos="fade-right">
+                <div class="hero-left">
+                    <div class="hero">
+                        <h1>I'm <span>Rohith Kumar</span></h1>
+                        <h3>I'm Video Editor/ Graphic Designer</h3>
+                    </div>
+                    <p>A passionate graphic and UI/UX designer with a focus on creating visually appealing and functional designs. With years of experience in branding, video editing, and user interface design, I bring a unique blend of creativity and technical expertise to every project. </p>
+                    <div class="hero-btn-wrap">
+                        <div class="hire-me-btn btn-1">
+                            <a href="https://www.instagram.com/rohithkumar_designer19" target="_blank">Let's talk</a>
+                        </div>
+                        <div class="know-more-btn btn-2">
+                            <a href="#about">Get a quote</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-right">
+                    <div class="hero-img img-cd">
+                        <img src="./assets/img/hero-img1.jpg" alt="">
+                        <div class="hero-img-bg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+
+     <!-- about  -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-left">
+                    <div class="about-img img-cd">
+                        <img src="./assets/img/about.png" alt="">
+                    </div>
+                </div>
+                <div class="about-right">
+                    <div class="section-title" data-aos="fade-right">
+                        <h2>Discover My <span>Story</span></h2>
+                    </div>
+                    <p>Having worked in diverse industries, from freelance graphic design to corporate roles, I understand the importance of aligning design with business goals. My aim is always to deliver innovative, user-centered solutions that not only meet the client’s expectations but also push creative boundaries.</p>
+                    <br>
+                    <p>I specialize in using tools like Photoshop, Illustrator, After Effects, and Figma to bring ideas to life, whether it’s crafting a brand identity or designing engaging digital experiences.</p>
+                    <div class="tab-content-wrapper">
+                        <div class="tab-links">
+                            <button class="tablink active-tab" onclick="openTab(event, 'Skills')"><h2>Skills</h2></button>
+                            <button class="tablink" onclick="openTab(event, 'Experience')"><h2>Experience</h2></button>
+                            <button class="tablink" onclick="openTab(event, 'Education')"><h2>Education</h2></button>
+                        </div>
+                        <div class="tab-contents">
+                            <div class="tab-link-content">
+                                <div id="Skills" class="tabs">
+                                    <div class="my-skills" id="skills">
+                                        <div class="">
+                                            <div class="progress fl-left" data-aos="fade-right">
+                                                <div class="technique">
+                                                    <h3>Graphic Design</h3>
+                                                    <div class="bar">
+                                                        <span class="graphic">75% &nbsp;</span>
+                                                    </div>
+                                                </div>
+                                                <div class="technique">
+                                                    <h3>Video Editing</h3>
+                                                    <div class="bar">
+                                                        <span class="editing">72% &nbsp;</span>
+                                                    </div>
+                                                </div>
+                                                <div class="technique">
+                                                    <h3>Motion Graphics</h3>
+                                                    <div class="bar">
+                                                        <span class="motion">70% &nbsp;</span>
+                                                    </div>
+                                                </div>
+                                                <div class="technique">
+                                                    <h3>Adobe Photoshop & Illustrator</h3>
+                                                    <div class="bar">
+                                                        <span class="photoshop">68% &nbsp;</span>
+                                                    </div>
+                                                </div>
+                                                <div class="technique">
+                                                    <h3>Adobe Premiere Pro & After Effects</h3>
+                                                    <div class="bar">
+                                                        <span class="premiere">65% &nbsp;</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="Experience" class="tabs" style="display: none;">
+                                    <div class="experience">
+                                        <h6>2023-2024</h6>
+                                        <p>Graphic Designer at cybernesis </p>
+                                    </div>
+                                    <div class="experience">
+                                        <h6>2020-2023</h6>
+                                        <p>Field excutive and  team lead at collman service</p>
+                                    </div>
+                                    <div class="experience">
+                                        <h6>2019-2020</h6>
+                                        <p>Worked as collection excutive at collman services</p>
+                                    </div>
+                                    <div class="experience">
+                                        <h6>2018-2019</h6>
+                                        <p>Worked as collection excutive at Digi connect</p>
+                                    </div>
+                                </div>
+                                <div id="Education" class="tabs" style="display: none;">
+                                    <div class="experience">
+                                        <h6>2008-2009</h6>
+                                        <p>Ssc from Aurnodhya vidyalayam</p>
+                                    </div>
+                                    <div class="experience">
+                                        <h6>2009-2013</h6>
+                                        <p>Diploma in mechanical engineering, GATE, KODAD</p>
+                                    </div>
+                                    <div class="experience">
+                                        <h6>2013-2017</h6>
+                                        <p>Btech Mechanical Engineering,vjit,hyderbad </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- services  -->
+     <section class="service-section" id="services">
+        <div class="container">
+            <div class="service-wrapper">
+                <div class="section-title">
+                    <h2>My Design <span>Offerings</span></h2>
+                </div>
+                <div class="splide service-slider" aria-label="service slider" data-aos="fade-up">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide is-active">
+                                <div class="service-card one">
+                                    <div class="service-icon img-cd">
+                                        <img src="./assets/img/web-design.png" alt="">
+                                    </div>
+                                    <h3>Custom Graphic Design</h3>
+                                    <p>Tailored visuals to enhance your brand's message, ensuring unique and impactful designs for all platforms.</p>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="service-card two">
+                                    <div class="service-icon img-cd">
+                                        <img src="./assets/img/branding.png" alt="">
+                                    </div>
+                                    <h3>Brand Strategy & Design</h3>
+                                    <p>Comprehensive brand development, blending strategy and creative design to build strong, cohesive brand identities.</p>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="service-card three">
+                                    <div class="service-icon img-cd">
+                                        <img src="./assets/img/video-editing.png" alt="">
+                                    </div>
+                                    <h3>Video Editing & Post Production</h3>
+                                    <p>Professional video services that refine and enhance footage into compelling visual stories, boosting your content’s overall appeal and engagement.</p>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="service-card four">
+                                    <div class="service-icon img-cd">
+                                        <img src="./assets/img/motion-graphic.png" alt="">
+                                    </div>
+                                    <h3>Motion Graphics & Animation</h3>
+                                    <p>Dynamic animations and motion graphics that bring your ideas to life, making content more engaging and interactive.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="splide__arrows">
+                        <button class="splide__arrow splide__arrow--prev">
+                          <i class="fas fa-arrow-left"></i>
+                        </button>
+                        <button class="splide__arrow splide__arrow--next">
+                          <i class="fas fa-arrow-right"></i>
+                        </button>
+                      </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+
+    <!-- portfolio  -->
+    <section class="portfolio-section" id="portfolio">
+        <div class="container">
+            <div class="section-title">
+                <h2>Design Case <span>Studies</span></h2>
+            </div>
+            <div class="splide portfolio-slider" aria-label="portfolio slider" data-aos="fade-up">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide is-active">
+                            <div class="portfolio-card">
+                                <div class="portfolio-img img-cd">
+                                    <img src="./assets/img/project6.jpg" alt="">
+                                </div>
+                                <div class="portfolio-text">
+                                    <h3>Online Shopping App</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta cupiditate, excepturi, quo repellendus est deserunt.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="portfolio-card">
+                                <div class="portfolio-img img-cd">
+                                    <img src="./assets/img/project5.jpg" alt="">
+                                </div>
+                                <div class="portfolio-text">
+                                    <h3>Online Shopping App</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta cupiditate, excepturi, quo repellendus est deserunt.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="portfolio-card">
+                                <div class="portfolio-img img-cd">
+                                    <img src="./assets/img/project1.jpg" alt="">
+                                </div>
+                                <div class="portfolio-text">
+                                    <h3>Online Shopping App</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta cupiditate, excepturi, quo repellendus est deserunt.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="portfolio-card">
+                                <div class="portfolio-img img-cd">
+                                    <img src="./assets/img/proeject2.jpg" alt="">
+                                </div>
+                                <div class="portfolio-text">
+                                    <h3>Online Shopping App</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta cupiditate, excepturi, quo repellendus est deserunt.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="portfolio-card">
+                                <div class="portfolio-img img-cd">
+                                    <img src="./assets/img/project3.jpg" alt="">
+                                </div>
+                                <div class="portfolio-text">
+                                    <h3>Online Shopping App</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta cupiditate, excepturi, quo repellendus est deserunt.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="splide__arrows">
+                    <button class="splide__arrow splide__arrow--prev">
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                    <button class="splide__arrow splide__arrow--next">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                  </div>
+            </div> 
+        </div>
+    </section>
+
+
+     <!-- contact  -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-title" data-aos="fade-right">
+                <h2>Let’s Connect & <span>Create</span></h2>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-left" data-aos="fade-right">
+                    <h3>Reach Me</h3>
+                    <div class="contact-line">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <a href="tel:+919515211993">+91 9515211993</a>
+                    </div>
+                    <div class="contact-line">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <a href="mailto:rohithkumarinavolu596@gmail.com">rohithkumarinavolu596@gmail.com</a>
+                    </div>
+                    <div class="contact-line">
+                        <div class="contact-icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <a href="#" target="_blank">Facebook</a>
+                    </div>
+                    <div class="contact-line">
+                        <div class="contact-icon">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                        <a href="#" target="_blank">Linkedin</a>
+                    </div>
+                    <div class="contact-line">
+                        <div class="contact-icon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <a href="https://www.instagram.com/rohithkumar_designer19" target="_blank">Instagram</a>
+                    </div>
+                </div>
+                <div class="contact-right" data-aos="fade-left">
+                    <h3>Send Me A Message</h3>
+                    <form role="form" id="contactForm" class="contact-form" data-toggle="validator" class="shake">
+                        <div class="form-group">
+                            <div class="controls">
+                                <input type="text" id="name" class="form-control" placeholder="Name" required data-error="Please enter your name">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="controls">
+                                <input type="email" class="email form-control" id="email" placeholder="Email" required data-error="Please enter your email">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="controls">
+                                <textarea id="message" rows="4" placeholder="Feedback" class="form-control" required data-error="Write your feedback"></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>  
+                        </div>
+              
+                        <button type="submit" id="submit" class="btn btn-success"></i> Send Message</button>
+                        <div id="msgSubmit" class="h3 text-center hidden"></div> 
+                        <div class="clearfix"></div>   
+              
+                      </form> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer  -->
+     <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-links">
+                        <a href="#">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#services">Services</a>
+                        <a href="#portfolio">Portfolio</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <div class="copyright">
+                        <p><span id="year"></span> <a href="#"> <span class="ft-site-name">Portfolio &copy; </span> </a> All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </footer>
+    
+
+
+    <!-- gsap  -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+
+    <!-- aos  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Splide js -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+    <!-- contact form  -->
+    <script src="./assets/js/jquery-min.js"></script>
+    <script src="./assets/js/form-validator.min.js"></script>
+    <script src="./assets/js/contact-form-script.js"></script>
+
+    <!-- script  -->
+    <script src="./assets/js/script.js"></script>
+    
+</body>
+</html>
